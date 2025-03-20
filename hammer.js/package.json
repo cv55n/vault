@@ -1,0 +1,33 @@
+{
+  "name": "hammer",
+  "title": "hammer.js",
+  "description": "a javascript library for multi-touch gestures",
+  "version": "2.0.8",
+  "scripts": {
+    "test": "npm run build && npm run jshint && npm run jscs && npm run qunit"
+  },
+  "main": "hammer.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "bannerize": "^1.0.2",
+    "blanket": "^1.2.3",
+    "changelogplease": "^1.2.0",
+    "ember-suave": "^4.0.0",
+    "git-tags": "^0.2.4",
+    "jquery": "^3.1.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "lodash-compat": "^3.10.2",
+    "node-qunit-phantomjs": "^1.4.0",
+    "rollup": "^0.59.4",
+    "run-when-changed": "^2.1.0",
+    "serve": "^1.4.0",
+    "uglify-js": "^3.4.0"
+  }
+}
