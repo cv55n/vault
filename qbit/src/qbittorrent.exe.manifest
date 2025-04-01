@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0">
+  <assemblyIdentity
+    name="org.qbittorrent.qBittorrent"
+    version="1.0.0.0"
+    processorArchitecture="*"
+    type="win32"
+  />
+
+  <!-- habilita o uso da versão 6 dos controles comuns (win xp e posterior) -->
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity type="win32"
+                        name="Microsoft.Windows.Common-Controls"
+                        version="6.0.0.0"
+                        processorArchitecture="*"
+                        publicKeyToken="6595b64144ccf1df"
+                        language="*" />
+    </dependentAssembly>
+  </dependency>
+
+  <!-- indica a conformidade com o uac, sem necessidade de privilégios elevados (win vista e posterior) -->
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+
+  <!-- declara o suporte para várias versões do windows -->
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+      <application>
+          <!-- Windows 10 and Windows 11 -->
+          <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+      </application>
+  </compatibility>
+
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <!-- substitui a implementação de heap padrão do Windows por um "segment heap" mais moderno em plataformas suportadas (requer windows 10 2004 ou mais recente) -->
+      <heapType xmlns="http://schemas.microsoft.com/SMI/2020/WindowsSettings">SegmentHeap</heapType>
+      
+      <!-- habilita os caminhos longos que excedam max_path em comprimento -->
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+    </windowsSettings>
+  </application>
+</assembly>
