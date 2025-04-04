@@ -1,0 +1,157 @@
+# compilados em bytes / otimizado / arquivos dll
+__pycache__/
+*.py[cod]
+*$py.class
+
+# extensões c
+*.so
+
+# distribuição / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# pyinstaller
+# 
+# geralmente esses arquivos são escritos por um script python de um template
+# antes do pyinstaller construir o exe, então injetar dados e outras infos nisso
+*.manifest
+*.spec
+
+# logs do instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# teste de unidade / reports de cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# traduções
+*.mo
+*.pot
+
+# coisas do django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# coisas do flask
+instance/
+.webassets-cache
+
+# coisas do scrapy
+.scrapy
+
+# documentação sphinx
+docs/_build/
+
+# pybuilder
+.pybuilder/
+target/
+
+# notebook jupyter
+.ipynb_checkpoints
+
+# ipython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+# Pipfile.lock
+
+# uv
+# uv.lock
+
+# poetry
+# poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# pep 582;
+#
+# utilizado por exemplo em:
+# github.com/David-OConnor/pyflow
+#
+# ou:
+# github.com/pdm-project/pdm
+__pypackages__/
+
+# coisas do celery
+celerybeat-schedule
+celerybeat.pid
+
+# arquivos do sagemath
+*.sage.py
+
+# ambientes
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# configurações de projeto spyder
+.spyderproject
+.spyproject
+
+# configurações de projeto rope
+.ropeproject
+
+# documentação mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# checador de tipagem pyre
+.pyre/
+
+# analisador de tipagem estática pytype
+.pytype/
+
+# símbolos de debug cython
+cython_debug/
+
+# pycharm
+# .idea/
+
+.vscode/*
+
+.DS_Store
